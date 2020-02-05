@@ -3869,7 +3869,9 @@ input, select, textarea {
 				text-align: center;
 			}
 
-				
+				#main > .posts > article > :last-child {
+					margin-bottom: 0;
+				}
 
 				#main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 0;
