@@ -89,13 +89,7 @@
 							<h5>TMLR 2022     Paper: <a href="https://openreview.net/forum?id=bN2vWLTh0P">link</a>      Code: <a href="https://github.com/Hither1/Time-Inconsistency-RL">link</a></h5>
 							<h5></h5>Huangyuan Su, Nixie Lesmana, <a href="https://personal.ntu.edu.sg/cspun/">Pun Chi Seng</a> (Supervisor)<p></p>
 							<br>
-							Reinforcement Learning (RL) is a sub-domain of machine learning that is concerned with how an algorithmic agent can take actions in a certain environment so that it can accumulate reward. 
-                                    Deep reinforcement learning (DRL) is the marriage between deep learning and reinforcement learning. In recent years, DRL has achieved glorious success in various fields. 
-                                    The most well-known example is probably the victory of AlphaGo against the top human Go masters. But beyond games, DRL certainly has much more applications, which include but are not limited to resources management in computer clusters, robotics and web system configuration.
-
-                                    Temporal Credit Assignment (TCA) problem is the problem of determining the actions that lead to a certain outcome. This is of ultimate importance to the study of DRL as most RL algorithms or agents are essentially attempting to solve the TCA problem.
-
-							
+							Policy iteration (PI) is a fundamental policy search algorithm in standard RL setting, which can be shown to converge to an optimal policy by policy improvement theorems. However, the standard PI relies on Bellman’s Principle of Optimality, which might be violated by time-inconsistent (TIC) objectives, such as non-exponentially discounted reward functions. The use of standard PI under TIC objectives has thus been marked with questions regarding the convergence of its policy improvement scheme and the optimality of its termination policy, often leading to its avoidance. In this paper, we consider an infinite-horizon TIC RL setting and formally present an alternative type of optimality drawn from game theory, i.e., subgame perfect equilibrium (SPE), that attempts to resolve the aforementioned questions. We first analyze standard PI under the SPE type of optimality, revealing its merits and insufficiencies. Drawing on these observations, we propose backward Q-learning (bwdQ), a new algorithm in the approximate PI family that targets SPE policy under non-exponentially discounted reward functions. Finally, with two TIC gridworld environments, we demonstrate the implications of our theoretical findings on the behavior of bwdQ and other approximate PI variants.
 
 							
 						</header>
