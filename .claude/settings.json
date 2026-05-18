@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/suhuangyuan/Hither1.github.io remote -v)",
+      "Bash(git -C /Users/suhuangyuan/Hither1.github.io config user.name)",
+      "Bash(ssh -T git@github.com)",
+      "Read(//Users/suhuangyuan/.ssh/**)",
+      "Bash(ssh -i ~/.ssh/id_ed25519 -T git@github.com)",
+      "Bash(git -C /Users/suhuangyuan/Hither1.github.io remote set-url origin git@github-hither1:Hither1/Hither1.github.io.git)",
+      "Bash(ssh -T git@github-hither1)"
+    ],
+    "additionalDirectories": [
+      "/Users/suhuangyuan/.ssh"
+    ]
+  }
+}
