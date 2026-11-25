@@ -154,6 +154,8 @@
   
   
   <link rel="stylesheet" href="/css/academic.css">
+  <link rel="stylesheet" href="/css/booking.css">
+  <script src="/js/booking.js" defer></script>
   <style>
     .card-simple {
       padding: 8px 12px !important;
@@ -477,6 +479,10 @@
           <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="/#meet" data-target="#meet"><span>Book a meeting</span></a>
+        </li>
+
         
         
 
@@ -710,6 +716,25 @@
         </li>
         
       </ul>
+
+      <section id="meet" class="booking-card" aria-labelledby="availability-title" data-booking-url="https://calendly.com/csu-g/30min" data-booking-timezone="America/New_York">
+        <div class="booking-heading">
+          <h2 id="availability-title">Availability</h2>
+          <span class="booking-timezone">Times in ET</span>
+        </div>
+        <p id="booking-description" class="sr-only">Book a 30-minute Zoom meeting. Dates open Calendly in a new tab to check live availability in Eastern time.</p>
+        <div class="booking-calendar" hidden>
+          <div class="booking-weekdays" aria-hidden="true">
+            <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+          </div>
+          <div id="booking-dates" class="booking-dates" role="group" aria-labelledby="availability-title" aria-describedby="booking-hint booking-description"></div>
+        </div>
+        <div class="booking-footer">
+          <span class="booking-hint" id="booking-hint">Pick a day to see open times</span>
+          <a href="mailto:csu@g.harvard.edu?subject=Let's%20schedule%20a%20meeting">Email to schedule <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <noscript><p class="booking-hint"><a href="https://calendly.com/csu-g/30min" target="_blank" rel="noopener">Open Calendly to book a 30-minute Zoom meeting <span aria-hidden="true">&nearr;</span><span class="sr-only"> (opens in a new tab)</span></a></p></noscript>
+      </section>
 
     </div>
   </div>

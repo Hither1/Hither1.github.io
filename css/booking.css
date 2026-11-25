@@ -1,0 +1,140 @@
+#meet {
+  scroll-margin-top: 80px;
+}
+
+.booking-card {
+  --booking-ink: #3e5d85;
+  --booking-muted: #707578;
+  --booking-fill: #d9e1ee;
+  --booking-background: #f4f6fc;
+  color: #202124;
+  background: var(--booking-background);
+  width: 100%;
+  max-width: 320px;
+  margin: 22px auto 0;
+  padding: 18px 12px;
+  text-align: left;
+}
+
+.booking-heading,
+.booking-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.booking-heading h2 {
+  color: inherit;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.booking-timezone,
+.booking-hint {
+  color: var(--booking-muted);
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+.booking-timezone {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.booking-calendar {
+  margin-top: 20px;
+}
+
+.booking-weekdays,
+.booking-dates {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  justify-items: center;
+  gap: 5px;
+}
+
+.booking-weekdays {
+  color: var(--booking-muted);
+  font-size: 0.55rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.booking-date {
+  align-items: center;
+  aspect-ratio: 1;
+  background: var(--booking-fill);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: var(--booking-ink);
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  line-height: 1;
+  max-width: 36px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.booking-date-month {
+  font-size: 0.55rem;
+}
+
+.booking-date[aria-current="date"] {
+  background: transparent;
+  border-color: var(--booking-ink);
+}
+
+.booking-date-past {
+  background: transparent;
+  color: var(--booking-muted);
+  opacity: 0.5;
+}
+
+.booking-card a:hover {
+  color: var(--booking-ink);
+}
+
+.booking-card a.booking-date:hover {
+  background: var(--booking-ink);
+  color: var(--booking-background);
+  text-decoration: none;
+}
+
+.booking-card a:focus-visible {
+  outline: 3px solid var(--booking-ink);
+  outline-offset: 3px;
+}
+
+.booking-hint {
+  margin: 0;
+}
+
+.booking-footer {
+  font-size: 0.55rem;
+  margin-top: 16px;
+}
+
+.booking-footer .booking-hint {
+  font-size: inherit;
+}
+
+.booking-footer a {
+  color: var(--booking-ink);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+body.dark .booking-card {
+  --booking-ink: #b4cbed;
+  --booking-muted: #b5bdca;
+  --booking-fill: #344358;
+  --booking-background: #232c3b;
+  color: #f2f4f8;
+}
+
